@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grant Publishing Co | Free Book Assessment</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#2A2050}
+.pg{--b:color-mix(in srgb,var(--a) 55%,#B13FCF);--a2:color-mix(in srgb,var(--a) 50%,#fff);--b2:color-mix(in srgb,var(--b) 50%,#fff);background:#2A2050;color:#F1EEFF;font-family:Inter,system-ui,sans-serif;line-height:1.65;overflow:hidden;position:relative}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px;box-sizing:border-box;position:relative}
+.mont{font-family:Montserrat,Inter,sans-serif}
+.s1{background:#3A2C6E}.s2{background:#33275F}.s3{background:#2E2358}
+.tri{position:absolute;background:linear-gradient(135deg,var(--a),var(--b));clip-path:polygon(0 0,100% 50%,0 100%);pointer-events:none}
+.nav{background:#2F2459;border-top:2px solid var(--a);position:relative;z-index:3}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;color:var(--b2)}
+.mark{width:30px;height:30px;border-radius:50%;border:2px solid var(--b2);display:flex;align-items:center;justify-content:center;font-size:14px}
+.links{display:flex;gap:34px}
+.links a{color:#F1EEFF;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;min-height:44px}
+.links a:hover{color:var(--b2)}
+.hero{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center;padding:70px 0 80px}
+.art{position:relative;height:440px}
+.art .big{position:absolute;left:0;top:30px;width:420px;height:390px;background:linear-gradient(160deg,var(--a),var(--b));clip-path:polygon(0 0,100% 0,50% 100%)}
+.art .line{position:absolute;left:-16px;top:6px;width:452px;height:420px;background:#6B5BB0;clip-path:polygon(0 0,100% 0,50% 100%,50% 99%,1% 1%,99% 1%);opacity:.5}
+.book{position:absolute;left:92px;top:0;width:230px;height:326px;border-radius:5px 12px 12px 5px;background:#1B1440;box-shadow:-12px 20px 44px rgba(0,0,0,.5),inset 8px 0 0 rgba(255,255,255,.08);transform:rotate(7deg);padding:26px 22px 22px 32px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+.book i{display:block;width:44px;height:3px;background:var(--b2);margin-bottom:16px}
+.book .t{font-family:Montserrat,sans-serif;font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase}
+.book .s{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--b2)}
+.eyebrow{font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--b2);margin:0 0 14px}
+h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:58px;line-height:1.04;letter-spacing:-.01em;text-transform:uppercase;margin:0 0 22px}
+.lead{font-size:18px;color:#D2CBF2;max-width:520px;margin:0 0 32px}
+.row{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 32px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn:hover{filter:brightness(1.12)}
+.ghost{color:#F1EEFF;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.ghost:hover{color:var(--b2)}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 36px;padding:10px 0 90px}
+.f{display:flex;gap:18px;align-items:flex-start}
+.hex{flex:none;width:78px;height:86px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:#6A59AE;display:flex;align-items:center;justify-content:center}
+.hex div{width:72px;height:80px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:#3F3173;display:flex;align-items:center;justify-content:center}
+.f small{display:block;font-family:Montserrat,sans-serif;font-size:12px;letter-spacing:.3em;color:var(--b2);font-weight:600;text-transform:uppercase}
+.f h3{font-family:Montserrat,sans-serif;font-size:19px;margin:2px 0 6px;font-weight:700;text-transform:uppercase}
+.f p{margin:0;font-size:14px;color:#CBC3EE}
+.sec{padding:90px 0;position:relative}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:32px;letter-spacing:.22em;text-transform:uppercase;margin:0 0 26px;background:linear-gradient(90deg,var(--a2),var(--b2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.txt p{margin:0 0 18px;color:#D2CBF2;font-size:16px}
+.frame{position:relative;height:430px}
+.frame .bk{position:absolute;right:20px;top:10px;width:340px;height:380px;background:linear-gradient(160deg,var(--a),var(--b))}
+.card{position:absolute;left:10px;top:50px;width:330px;background:#241A4E;border:1px solid #6A59AE;padding:26px;box-shadow:0 26px 60px rgba(0,0,0,.5);box-sizing:border-box}
+.card h4{margin:0 0 2px;font-family:Montserrat,sans-serif;font-size:17px;text-transform:uppercase}
+.card small{color:#B9B0E4;font-size:13px}
+.chk{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-top:1px solid #3E3172;font-size:15px}
+.card h4+small+.chk{margin-top:14px}
+.ok{font-size:12px;font-weight:600;color:#0B2A1A;background:#7EE2A8;border-radius:999px;padding:3px 12px}
+.box{position:relative;height:330px;border:5px solid transparent;border-image:linear-gradient(160deg,var(--a),var(--b)) 1;display:flex;align-items:center;justify-content:flex-end;padding:30px;box-sizing:border-box;text-align:right}
+.box span{font-family:Montserrat,sans-serif;font-weight:800;font-size:44px;line-height:1.1;text-transform:uppercase;background:linear-gradient(180deg,var(--a2),var(--b2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.gr{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.gr span{border:1px solid #6A59AE;padding:6px 14px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#E6E0FF}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;padding:64px 0}
+.stats b{display:block;font-family:Montserrat,sans-serif;font-weight:600;font-size:54px;letter-spacing:.16em;line-height:1.1}
+.stats span{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#C3BAEA}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.q{background:#2A2050;border:1px solid #4A3C86;padding:34px 32px}
+.q p{font-size:18px;line-height:1.55;margin:12px 0 18px}
+.q span{color:#C3BAEA;font-size:14px}
+.stars{color:#FFC857;letter-spacing:3px}
+.contact{max-width:760px;margin:0 auto;border:1px solid #4A3C86;border-top:4px solid var(--a);background:#2C2253;padding:40px 44px 44px;position:relative;text-align:center}
+.contact h3{font-family:Montserrat,sans-serif;font-size:24px;margin:0 0 20px;text-transform:uppercase}
+.contact hr{border:0;border-top:1px solid #4A3C86;margin:0 0 26px}
+.cg{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;text-align:left}
+.cg small{display:block;font-family:Montserrat,sans-serif;letter-spacing:.26em;color:var(--b2);font-size:14px;margin-bottom:8px}
+.cg div div{font-size:15px;letter-spacing:.05em;color:#D2CBF2}
+.dots{height:220px;margin-top:70px;background-image:radial-gradient(circle,var(--b2) 2px,transparent 2.5px);background-size:16px 16px;-webkit-mask-image:radial-gradient(ellipse 70% 100% at 50% 100%,#000 30%,transparent 72%);mask-image:radial-gradient(ellipse 70% 100% at 50% 100%,#000 30%,transparent 72%);opacity:.8}
+.foot{text-align:center;font-size:13px;color:#B9B0E4;padding:0 0 36px;letter-spacing:.06em}
+@media (max-width:900px){
+.hero,.two,.qs{grid-template-columns:1fr}
+.feats{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}
+h1{font-size:38px}.links{display:none}.art{height:400px;transform:scale(.8);transform-origin:left top}
+.sec{padding:64px 0}.h2{font-size:24px}.frame{height:440px}
+.box span{font-size:32px}.btn{width:100%}.contact{padding:30px 22px}
+}
+</style>
+</helmet>
+<div class="pg" style="--a: {{accent}}">
+<div class="nav"><div class="wrap">
+<div class="logo"><span class="mark">G</span><span>GRANT PUBLISHING CO.</span></div>
+<div class="links"><a href="https://grantpublishingco.com/services/">Services</a><a href="https://grantpublishingco.com/case-studies/">Our Work</a><a href="https://grantpublishingco.com/about/">About</a><a href="https://grantpublishingco.com/contact/">Contact</a></div>
+</div></div>
+
+<div class="s1" style="position:relative">
+<div class="tri" style="width:34px;height:34px;right:6%;top:120px;transform:rotate(90deg)"></div>
+<div class="wrap">
+<section class="hero">
+<div class="art"><div class="line"></div><div class="big"></div><div class="book"><div><i></i><div class="t">Your Book Title</div></div><div class="s">Your Name</div></div></div>
+<div>
+<p class="eyebrow">Free book assessment</p>
+<h1>Books built to be discovered</h1>
+<p class="lead">Get a free review of your cover, interior and Amazon listing from Grant Publishing Co. See what readers see, and find out what to fix first.</p>
+<div class="row"><a class="btn" href="https://grantpublishingco.com/book-marketing-audit/?request=assessment#gpc-enquiry">Get my free assessment</a><a class="ghost" href="https://grantpublishingco.com/case-studies/">See our work →</a></div>
+</div>
+</section>
+<div class="feats">
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h11a3 3 0 0 1 3 3v15H8a3 3 0 0 1-3-3z"/><path d="M9 8h6"/></svg></div></div><div><small>We do</small><h3>Cover design</h3><p>Genre-aware covers that tell the right reader this book is for them.</p></div></div>
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></div></div><div><small>We do</small><h3>Formatting</h3><p>Readable interiors, prepared properly for print and ebook.</p></div></div>
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></div></div><div><small>We do</small><h3>Publishing setup</h3><p>Edition preparation and agreed KDP setup, step by step.</p></div></div>
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div></div><div><small>We do</small><h3>Amazon visibility</h3><p>Considered metadata, categories and book descriptions.</p></div></div>
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div></div><div><small>We do</small><h3>A+ Content</h3><p>A coordinated presentation of the story, author and related titles.</p></div></div>
+<div class="f"><div class="hex"><div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9C8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2l11 5V6z"/><path d="M14 9a3 3 0 0 1 0 6"/><path d="M6 14l1 5"/></svg></div></div><div><small>We do</small><h3>Marketing</h3><p>Research, priorities and suitable routes to readers.</p></div></div>
+</div>
+</div>
+</div>
+
+<div class="s3 sec">
+<div class="tri" style="width:30px;height:30px;right:5%;top:90px;transform:rotate(90deg)"></div>
+<div class="tri" style="width:90px;height:90px;right:-30px;top:300px;opacity:.8"></div>
+<div class="wrap two">
+<div class="frame"><div class="bk"></div><div class="card"><h4>Book assessment</h4><small>What readers see, and what to fix</small>
+<div class="chk"><span>Cover</span><span class="ok">Reviewed</span></div>
+<div class="chk"><span>Interior</span><span class="ok">Reviewed</span></div>
+<div class="chk"><span>Amazon listing</span><span class="ok">Reviewed</span></div>
+<div class="chk"><span>Next steps</span><span class="ok">Included</span></div></div></div>
+<div class="txt">
+<h2 class="h2">Look like a reader</h2>
+<p>Your book is competing in seconds. Before anyone reads a page, they judge the cover, the look of the listing and how clear the description is.</p>
+<p>Already published? We review what readers see and recommend what to fix, so you know the next right move for your book.</p>
+<p style="margin-bottom:28px">It is free, and there is no pressure to buy anything.</p>
+<a class="btn" href="https://grantpublishingco.com/book-marketing-audit/?request=assessment#gpc-enquiry">Request my assessment</a>
+</div>
+</div>
+</div>
+
+<div class="s1 sec">
+<div class="tri" style="width:26px;height:26px;left:3%;top:70px;transform:rotate(90deg)"></div>
+<div class="wrap two">
+<div class="txt">
+<h2 class="h2">What we think?</h2>
+<p>We understand your book first, and recommend second. Every assessment follows the Grant Framework, so advice comes from your book and your market, not a template.</p>
+<div class="gr"><span>Ground</span><span>Refine</span><span>Align</span><span>Navigate</span><span>Track</span></div>
+</div>
+<div class="box"><span>Understand first. Recommend second.</span></div>
+</div>
+</div>
+
+<div class="s2">
+<div class="wrap stats">
+<div><b>5.0</b><span>Client rating</span></div>
+<div><b>10</b><span>Services</span></div>
+<div><b>5</b><span>Framework steps</span></div>
+<div><b>3</b><span>Simple steps</span></div>
+</div>
+</div>
+
+<div class="s3 sec">
+<div class="wrap">
+<h2 class="h2" style="text-align:center">Trusted by authors</h2>
+<div class="qs">
+<div class="q"><span class="stars" aria-hidden="true">★★★★★</span><p>“With some people talk is cheap, but Abdulqudus delivers concise written reports that are professional and spot on in his assessment and recommendations.”</p><span>Nadine Laman, Cactus Rain Publishing</span></div>
+<div class="q"><span class="stars" aria-hidden="true">★★★★★</span><p>“Abdul outperformed himself in the creation of my children's book, Luma the Sleepy Star, and did so in a very timely fashion.”</p><span>John Capon, Author</span></div>
+</div>
+</div>
+</div>
+
+<div class="s2 sec" style="padding-bottom:0">
+<div class="tri" style="width:80px;height:80px;left:-24px;top:140px"></div>
+<div class="tri" style="width:80px;height:80px;right:-24px;top:160px;transform:rotate(180deg)"></div>
+<div class="wrap">
+<div class="contact">
+<h3>Contact</h3><hr>
+<div class="cg">
+<div><small>GRANT PUBLISHING CO.</small><div>HELLO@GRANTPUBLISHINGCO.COM</div><div>GRANTPUBLISHINGCO.COM</div></div>
+<a class="btn" href="https://grantpublishingco.com/book-marketing-audit/?request=assessment#gpc-enquiry">Get my free assessment</a>
+</div>
+</div>
+<div class="dots"></div>
+</div>
+<div class="foot">© 2026 Grant Publishing Co.</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#6D4AF2"},"$preview":{"width":1440,"height":3200}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#6D4AF2' };
+}
+}
+</script>
+</body>
+</html>
